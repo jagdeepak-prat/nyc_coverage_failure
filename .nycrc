@@ -1,0 +1,8 @@
+{
+"include": [
+      "server/*",
+      "common/*",
+      "node_modules/dummy_node_module/*"
+ ],
+"excludeNodeModules": false
+}
