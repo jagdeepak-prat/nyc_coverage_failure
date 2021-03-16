@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dummy_node_module": "file:../dummy_node_module"
+    "dummy_node_module": "git+https://github.com/jagdeepak-prat/dummy_node_module.git"
   },
   "devDependencies": {
     "chai": "^4.3.4",
