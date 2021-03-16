@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha --exit || true",
+    "test": "mocha",
     "coverage": "nyc npm run test && nyc report  --reporter html  --report-dir ./coverage_report && open coverage_report/index.html"
   },
   "author": "",

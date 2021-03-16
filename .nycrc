@@ -1,8 +1,7 @@
 {
 "include": [
-      "server/*",
-      "common/*",
-      "node_modules/dummy_node_module/*"
+      "index.js",
+      "node_modules/dummy_node_module/index.js"
  ],
 "excludeNodeModules": false
 }

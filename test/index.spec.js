@@ -1,17 +1,17 @@
 let chai = require('chai')
-let should = chai.should();
 let server = require('../index');
-
-describe("DUMMY TEST",()=>{
-    it(" Should print hello world",(done)=>{
-            let res= server.hello();
-            res.should.be.equal("hello world");
-            done();
-
+chai.should();
+describe("DUMMY TESTS",()=>{
+    it(" Should print hello world",()=>{
+            return server.hello().then(res=>{
+                console.log("** output from function call ** ",res);
+                res.should.be.equal("hello world");
+            })
     })
-    it(" Should print hello world from dependency",(done)=>{
-            let res=server.hello_from_dependency();
-            res.should.be.equal("hello from node dependency")
-            done();
+    it(" Should print hello world from dependency",()=>{
+            return server.hello_from_dependency().then(res=>{
+                console.log("** output from function call ** ",res);
+                res.should.be.equal("hello from node dependency");
+            })            
     })
 })
